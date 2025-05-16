@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Saya</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #ffe4e1; /* Light Coral */
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+    
+        .container {
+            background-color: #f8bbd0; /* Light Pink */
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            max-width: 800px;
+            width: 100%;
+            position: relative;
+            overflow: hidden; /* Untuk membatasi elemen di luar kontainer */
+        }
+    
+        .profile-image-container {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .profile-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    
+        .star {
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            opacity: 0.7;
+        }
+    
+        .star-1 {
+            top: 5px;
+            left: 1px;
+            z-index: 1; /* Pastikan bintang di atas foto */
+        }
+    
+        .star-2 {
+            top: 80px;
+            left: 90px;
+            z-index: 1; /* Pastikan bintang di atas foto */
+        }
+    
+        .star-1 img, .star-2 img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    
+        .left-column {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .right-column {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    
+        h1 {
+            font-family: 'Brush Script MT', cursive;
+            color: #d87093;
+            font-size: 3em;
+            margin-top: 0;
+            margin-bottom: 8px;
+            text-align: center;
+        }
+    
+        .quote {
+            font-style: italic;
+            color: #8b008b;
+            text-align: center;
+            margin-bottom: 3px;
+            font-size: 0.9em;
+        }
+    
+        .angkatan {
+            font-weight: bold;
+            color: #a52a2a;
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 0.8em;
+        }
+    
+        .nama {
+            font-weight: bold;
+            color: #4682b4;
+            margin-bottom: 3px;
+            text-align: center;
+        }
+    
+        .sekolah {
+            color: #696969;
+            margin-bottom: 3px;
+            text-align: center;
+            font-size: 0.9em;
+        }
+    
+        .tujuan {
+            color: #2f4f4f;
+            margin-bottom: 3px;
+        }
+    
+        .universitas {
+            color: #556b2f;
+            margin-bottom: 2px;
+            font-size: 0.95em;
+        }
+    
+        .decorative-bottom {
+            position: absolute;
+            bottom: 10px;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+    
+        .bunny-left {
+            width: 80px;
+            height: 80px;
+            margin-right: auto; /* Mendorong ke kiri */
+            margin-left: 0px; /* Kurangi atau hilangkan margin kiri */
+        }
+    
+        .bunny-right {
+            width: 80px;
+            height: 80px;
+            margin-left: auto; /* Mendorong ke kanan */
+            margin-right: 30px; /* Pertahankan atau sesuaikan margin kanan */
+        }
+    
+        .bunny-left img, .bunny-right img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    
+        
+    </style>
+    <div class="container">
+        <div class="left-column">
+            <div class="profile-image-container">
+                <img src="poto hasna.jpeg" alt="Foto Profil" class="profile-image">
+                <div class="star star-1"><img src="bintang_pink-removebg-preview.png" alt="Bintang"></div>
+                <div class="star star-2"><img src="bintang_pink-removebg-preview.png" alt="Bintang"></div>
+            </div>
+            <div class="nama">HASNA ARIBBA MUHFID ROFIDAH</div>
+            <div class="sekolah">SMAN 2 TAMBUN SELATAN</div>
+            <div class="sekolah">SMPIT FITRAH HANNIAH</div>
+        </div>
+        <div class="right-column">
+            <h1>ABOUT ME</h1>
+            <div class="quote">" YOUR FUTURE IS CREATED BY YOURSELF "</div>
+            <div class="angkatan">ANGKATAN : HIGH FIVE</div>
+            <div class="tujuan">Tujuan Perguruan Tinggi :</div>
+            <div class="universitas">Universitas Indonesia, PKN STAN, Universitas Gadjah Mada.</div>
+        </div>
+        <div class="decorative-bottom">
+            <div class="bunny-left"><img src="kelinci-removebg-preview.png" alt="Kelinci Kiri"></div>
+            <div class="bunny-right"><img src="kelinci-removebg-preview.png" alt="Kelinci Kanan"></div>
+        </div>
+    </div>
